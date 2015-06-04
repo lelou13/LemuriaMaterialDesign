@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Lemuria</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_poi">Near Your Location</string>
+    <string name="nav_item_event">Event</string>
+    <string name="nav_item_suggest">Suggest Location</string>
+    <string name="nav_item_explore">Explore</string>
+    <string name="nav_item_user_options">User Options</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_poi</item>
+        <item>@string/nav_item_event</item>
+        <item>@string/nav_item_suggest</item>
+        <item>@string/nav_item_explore</item>
+        <item>@string/nav_item_user_options</item>
+    </string-array>
+
+    <string name="title_suggest">Suggest Location</string>
+    <string name="title_event">Event</string>
+    <string name="title_poi">Near Your Location</string>
+    <string name="title_explore">Explore</string>
+    <string name="title_user_options">User Options</string>
+    <string name="view_poi">View Poi</string>
+    <string name="title_activity_view_poi">ViewPoiActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>
