@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="androidhive.info.materialdesign.activity.EventFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+        <com.rey.material.widget.FloatingActionButton
+            style="@style/Material.Widget.FloatingActionButton.Light"
+            android:id="@+id/fab_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:fab_backgroundColor="@color/colorPrimary"
+            app:fab_iconSrc="@drawable/ic_plus"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            />
+
+        <com.rey.material.widget.ProgressView
+            android:id="@+id/progress_pv_circular_colors"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            app:pv_autostart = "false"
+            android:layout_marginBottom="10px"
+            app:pv_circular="true"
+            app:cpd_strokeColors="@array/progress_colors"
+            app:pv_progressMode="indeterminate"
+            android:layout_alignTop="@+id/fab_image"
+            android:layout_alignLeft="@+id/fab_image"
+            android:layout_alignStart="@+id/fab_image"
+            android:layout_alignBottom="@+id/fab_image"
+            android:layout_alignRight="@+id/fab_image"
+            android:layout_alignEnd="@+id/fab_image" />
+
+
+</RelativeLayout>

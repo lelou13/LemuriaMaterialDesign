@@ -5,28 +5,40 @@
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
 
-    <string name="nav_item_poi">Near Your Location</string>
+    <string name="nav_item_poi">Near My Location</string>
     <string name="nav_item_event">Event</string>
     <string name="nav_item_suggest">Suggest Location</string>
     <string name="nav_item_explore">Explore</string>
-    <string name="nav_item_user_options">User Options</string>
+    <string name="nav_item_user_options">My Options</string>
 
     <!-- navigation drawer item labels  -->
     <string-array name="nav_drawer_labels">
         <item>@string/nav_item_poi</item>
-        <item>@string/nav_item_event</item>
-        <item>@string/nav_item_suggest</item>
         <item>@string/nav_item_explore</item>
         <item>@string/nav_item_user_options</item>
     </string-array>
 
     <string name="title_suggest">Suggest Location</string>
-    <string name="title_event">Event</string>
-    <string name="title_poi">Near Your Location</string>
+    <string name="title_event">Near My Location</string>
+    <string name="title_poi">Near My Location</string>
     <string name="title_explore">Explore</string>
-    <string name="title_user_options">User Options</string>
+    <string name="title_user_options">My Options</string>
     <string name="view_poi">View Poi</string>
     <string name="title_activity_view_poi">ViewPoiActivity</string>
 
     <string name="hello_world">Hello world!</string>
+
+    <string-array name="spinnerItems">
+        <item>item1</item>
+        <item>item2</item>
+        <item>item3</item>
+        <item>item4</item>
+    </string-array>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_first_slide">FirstSlide</string>
+    <string name="title_activity_second_slide">SecondSlide</string>
+    <string name="title_activity_third_slide">ThirdSlide</string>
+    <string name="title_activity_fourth_slide">FourthSlide</string>
+    <string name="skip">Skip</string>
+    <string name="title_activity_explore">Jelajah</string>
 </resources>

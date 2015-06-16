@@ -6,4 +6,31 @@
     <color name="windowBackground">#FFFFFF</color>
     <color name="navigationBarColor">#2D2D2D</color>
     <color name="colorAccent">#6EC8C7</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="et_divider_focused">@color/colorPrimaryDark</color>
+    <color name="et_divider_not_focused">#FF6D6D6D</color>
+    <color name="et_divider_disable">#FFC1C1C1</color>
+    <color name="indigo">#3F51B5</color>
+
+    <color name="tabsScrollColor">@color/colorPrimary</color>
+    <color name="lighGreen">#8BC34A</color>
+    <color name="lighGrey">#E0E0E0</color>
+    <color name="brown">#795548</color>
+    <color name="grey">#9E9E9E</color>
+    <color name="greyDark">#212121</color>
+    <color name="list_row_bg">#FFFFFF</color>
+
+    <array name="progress_colors">
+        <item>#FF3F8AF8</item>
+        <item>#FFD8433C</item>
+        <item>#FFF2AF3A</item>
+        <item>#FF279B5E</item>
+    </array>
+
+    <array name="in_colors">
+        <item>#FFB5D4FF</item>
+        <item>#FFDEEAFC</item>
+        <item>#FFFAFFFE</item>
+    </array>
 </resources>

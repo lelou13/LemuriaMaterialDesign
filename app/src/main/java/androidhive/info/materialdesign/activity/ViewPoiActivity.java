@@ -1,5 +1,7 @@
 package androidhive.info.materialdesign.activity;
 
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -7,20 +9,25 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.github.florent37.materialviewpager.MaterialViewPager;
 
 import androidhive.info.materialdesign.R;
 
-public class ViewPoiActivity extends ActionBarActivity {
+public class ViewPoiActivity extends AppCompatActivity {
 
     private MaterialViewPager mViewPager;
 
-//    private DrawerLayout mDrawer;
-//    private ActionBarDrawerToggle mDrawerToggle;
+    private Drawable[] mDrawables = new Drawable[2];
+    private int index = 0;
     private Toolbar toolbar;
+    private Menu menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,12 +65,12 @@ public class ViewPoiActivity extends ActionBarActivity {
             @Override
             public Fragment getItem(int position) {
                 switch (position % 4) {
-                    //case 0:
-                    //    return RecyclerViewFragment.newInstance();
+                    case 0:
+                        return ScrollFragment.newInstance();
                     case 1:
+                        return ScrollFragment.newInstance();
+                    case 2:
                         return RecyclerViewFragment.newInstance();
-                    //case 2:
-                    //    return WebViewFragment.newInstance();
                     default:
                         return ScrollFragment.newInstance();
                 }
@@ -107,18 +114,18 @@ public class ViewPoiActivity extends ActionBarActivity {
 
             @Override
             public int getCount() {
-                return 100;
+                return 4;
             }
 
             @Override
             public CharSequence getPageTitle(int position) {
                 switch (position % 4) {
                     case 0:
-                        return "Description";
-                    case 1:
-                        return "Reviews";
-                    case 2:
                         return "Menus";
+                    case 1:
+                        return "Desc";
+                    case 2:
+                        return "Reviews";
                     case 3:
                         return "Gallery";
                 }
@@ -137,4 +144,30 @@ public class ViewPoiActivity extends ActionBarActivity {
 //        mDrawerToggle.syncState();
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.menu_like, menu);
+//        this.menu = menu;
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        mDrawables[0] = getResources().getDrawable(R.drawable.heart_o);
+        mDrawables[1] = getResources().getDrawable(R.drawable.heart);
+
+//        if(id == R.id.action_like){
+//            index = (index + 1) % 2;
+//            menu.getItem(0).setIcon(mDrawables[index]);
+//            return true;
+//        }
+
+        return super.onOptionsItemSelected(item);
+    }
 }

@@ -4,4 +4,11 @@
     tools:context="androidhive.info.materialdesign.activity.ViewPoiActivity">
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_like"
+        android:title="@string/action_search"
+        android:orderInCategory="100"
+        android:icon="@drawable/abc_ic_clear_mtrl_alpha"
+        app:showAsAction="ifRoom" />
 </menu>

@@ -15,4 +15,29 @@
         android:title="@string/view_poi"
         android:orderInCategory="100"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_jelajah"
+        android:title="Jelajah"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_volley_JSONObject"
+        android:title="Test Volley JSONObject"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_volley_JSONOArray"
+        android:title="Test Volley JSONArray"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/swipeBack"
+        android:title="SwipeBackActivity"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
 </menu>

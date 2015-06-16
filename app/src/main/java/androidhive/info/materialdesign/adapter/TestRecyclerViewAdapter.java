@@ -1,4 +1,4 @@
-package androidhive.info.materialdesign.activity;
+package androidhive.info.materialdesign.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -45,13 +45,13 @@ public class TestRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
         switch (viewType) {
             case TYPE_HEADER: {
                 view = LayoutInflater.from(parent.getContext())
-                        .inflate(R.layout.list_item_card_big, parent, false);
+                        .inflate(R.layout.list_review, parent, false);
                 return new RecyclerView.ViewHolder(view) {
                 };
             }
             case TYPE_CELL: {
                 view = LayoutInflater.from(parent.getContext())
-                        .inflate(R.layout.list_item_card_small, parent, false);
+                        .inflate(R.layout.list_review, parent, false);
                 return new RecyclerView.ViewHolder(view) {
                 };
             }

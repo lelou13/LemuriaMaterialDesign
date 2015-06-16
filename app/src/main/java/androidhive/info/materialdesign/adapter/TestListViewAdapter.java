@@ -1,4 +1,4 @@
-package androidhive.info.materialdesign.activity;
+package androidhive.info.materialdesign.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;

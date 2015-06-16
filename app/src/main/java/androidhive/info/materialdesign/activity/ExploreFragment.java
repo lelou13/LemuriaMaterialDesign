@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.airbnb.android.airmapview.AirMapView;
+
 import androidhive.info.materialdesign.R;
 
 /**
@@ -19,12 +21,19 @@ public class ExploreFragment extends Fragment {
         // Required empty public constructor
     }
 
+    private View rootView;
+    private AirMapView mapView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_explore, container, false);
+        rootView = inflater.inflate(R.layout.fragment_explore, container, false);
+
+        mapView = (AirMapView) rootView.findViewById(R.id.map_view);
+        mapView.initialize(getActivity().getSupportFragmentManager());
+
+        return rootView;
     }
 
 

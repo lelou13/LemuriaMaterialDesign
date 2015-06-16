@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dimen_5"
+    android:background="@android:color/transparent"
+    android:paddingBottom="2dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/t1"
+            android:background="@drawable/msg_text_bg"
+            android:paddingBottom="10dp" >
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:textSize="12dp"
+                android:textColor="#999"
+                android:drawableLeft="@drawable/history_999999_14"
+                android:text=" 5 days ago"/>
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mantab!! Rasanya enak sekalii..."
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/t3"
+                android:layout_toStartOf="@+id/t3" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/top_text_bg"
+            android:textColor="@color/white"
+            android:paddingLeft="40dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:paddingRight="5dp"
+            android:text="Muhammad William Sutrisna" />
+
+        <com.pkmmte.view.CircularImageView
+            android:id="@+id/photo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_pp"
+            app:border="true"
+            app:border_color="@color/colorPrimary"
+            app:border_width="4dp"
+            android:layout_marginTop="-2dp"
+            android:layout_marginLeft="-2dp"
+            app:shadow="false" />
+    </RelativeLayout>
+
+</RelativeLayout>
